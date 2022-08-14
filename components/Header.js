@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import logo from './../gulu-logo.png'
 import HeaderItem from './HeaderItem';
 import {
   BadgeCheckIcon,
@@ -22,14 +23,17 @@ function Header() {
           <HeaderItem title='SEARCH' Icon={SearchIcon}/>
           <HeaderItem title='ACCOUNT' Icon={UserIcon}/>
         </div>
+        <div className="mx-10 min-w-fit">
         <Image
           className="object-contain"
-          src="https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png" 
-          width={200} 
+          src={logo} 
+          width={100} 
           height={100}
         />
+        </div>
     </header>
   );
 }
+// "https://press.hulu.com/wp-content/uploads/2020/02/hulu-white.png"
 
 export default Header
